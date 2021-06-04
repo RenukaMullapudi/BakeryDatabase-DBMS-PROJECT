@@ -1,0 +1,25 @@
+.producttype {
+    margin-top: 60px;
+    padding-top: 60px;
+    color: darkblue;
+    font-family: cursive;
+    text-align: center;
+}
+
+.proarrange {
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.welcome {
+    text-align: center;
+    color: darkblue;
+}
+
+#d {
+    margin-top: 40px;
+    box-shadow: 0 0 30px;
+}
