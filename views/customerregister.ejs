@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register!</title>
+    <style>
+      #heading{background-image: linear-gradient(to bottom right, white, white); opacity:0.8; text-align:center;color: lightpink;font-size:5.4vw;font-family: cursive;}
+      .button1 {background-color: lightpink; border: none;color: black;padding: 0.911vw 2.018vw;text-align: center;text-decoration: none;display: inline-block;font-size: 0.976vw; font-weight:bold; border-radius:10px;}
+      p{text-align: center;color: purple;font-size: 1.302vw;}
+      button:active{color: yellow;}
+      body {background-image: url('cakepo.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: cover;}
+    </style>
+  </head>
+  <script type="text/javascript">
+
+  </script>
+  <body>
+    <h1 id="heading"><div style="font-weight:bold;">JOIN THE FAMILY!</div></h1><br>
+    <center><p style="color:black; font-weight:bold;"> <%=(typeof alertMsg!='undefined')? alertMsg:''%></p></center>
+    <center>  <form action="register" method="post">
+    <label for="fullname" style="font-size: 1.9vw; font-weight:bold;">Fullname:</label><br>
+    <input style="height:1.95vw; width: 19.53vw; " type="text" name="Fullname" id='fullname'>
+    <br><br>
+    <label for="setpassword" style="font-size: 1.9vw; font-weight:bold;">Set&nbsp;Your&nbsp;Password:</label><br>
+    <input style="height:1.95vw; width: 19.53vw;"type="password" name="Setpassword" id='setpassword' minlength="8">
+    <br><br>
+    <label for="emailid" style="font-size: 1.9vw; font-weight:bold;">Email&nbsp;Id:</label><br>
+    <input style="height:1.95vw; width: 19.53vw;"type="email" name="emailid" id='emailId'>
+    <br><br>
+    <label for="phone" style="font-size: 1.9vw; font-weight:bold;">Phone&nbsp;Number:</label><br>
+    <input style="height:1.95vw; width: 19.53vw;"type="phone" name="PhoneNumber" id='phone'>
+    <br><br>
+    <button class="button1" type="submit" style="text-align: center;">Register</button>
+  </form> </center>
+  </body>
+</html>

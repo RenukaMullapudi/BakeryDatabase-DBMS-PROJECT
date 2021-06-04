@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+	#heading{background-image: linear-gradient(to bottom right, powderblue, pink);text-align:center;color: #800080;font-size:5.4vw;font-family: cursive;}
+	* {box-sizing: border-box;}
+	.column {float: left;width: 33.33%;padding: 0.651vw;}
+	.row::after {content: "";clear: both;display: table;}
+	.button1 {background-color: #6495ED; border: none;color: white;padding: 0.9vw 2.018vw;text-align: center;text-decoration: none;display: inline-block;font-size: 1.5vw;}
+	p{text-align: center;color: #6495ED;font-size: 1.302vw;}
+	button:active{
+		color: yellow;
+	}
+	body{background-image: url("empbg.jpg");}
+</style>
+</head>
+
+<body>
+
+<div class="row" style="padding-top:150px;">
+  <div class="column" ></div>
+  <div class="column" style="background-color: white; text-align: center; border-radius:25px;">
+  	<h4 style="color: #6495ED;"><b>WELCOME!</b></h4>
+	<p><%=(typeof alertMsg!='undefined')? alertMsg:''%></p>
+    <form action="emp-login" method="post">
+		<label for="username" style="font-size: 1.95vw;">Employee ID:</label><br>
+		<input style="height:1.95vw; width: 19.53vw; " type="text" name="emp_id" id='emp_id'>
+		<br><br>
+		<label for="password" style="font-size: 1.95vw;">Password:</label><br>
+		<input style="height:1.95vw; width: 19.53vw;"type="password" name="password" id='password'>
+		<br><br>
+		<button class="button1" type="submit" style="text-align: center;">Login</button>
+	</form><br>
+  </div>
+  <div class="column"></div>
+</div>
+<div style="line-height: 1em";>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ADD A NEW ITEM</title>
+    <style>
+      #heading{background-color: black; text-align:center;color:white;font-size:3.4vw;font-family: cursive;}
+      .button1 {background-color: black; border: none;color:white;padding: 0.911vw 2.018vw;text-align: center;text-decoration: none;display: inline-block;font-size: 0.976vw;}
+      p{text-align: center;color: purple;font-size: 1.302vw;}
+      button:active{color: yellow;}
+      body {background-image: url('additem.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: cover;}
+    </style>
+  </head>
+  <script type="text/javascript">
+
+  </script>
+  <body>
+
+    <h1 id="heading"><div style="font-weight:bold;">FILL IN THE REQUIRED DETAILS</div></h1><br>
+    <center><p style="color:black; font-weight:bold;"> <%=(typeof alertMsg!='undefined')? alertMsg:''%></p></center>
+    <center>  <form action="add-new-item" method="post">
+      <div style="background-color:white; width:30%; border-radius:20px;">
+    <br>
+    <label style="font-size: 1.9vw; font-weight:bold;">Item&nbsp;Type:</label><br>
+    <input style="height:1.95vw; width: 19.53vw; " type="text" name="type">
+    <br><br>
+    <label style="font-size: 1.9vw; font-weight:bold;">Item&nbsp;Flavor:</label><br>
+    <input style="height:1.95vw; width: 19.53vw;" name="flavor" minlength="8">
+    <br><br>
+    <label style="font-size: 1.9vw; font-weight:bold;">Item&nbsp;Price:</label><br>
+    <input style="height:1.95vw; width: 19.53vw;" name="price" >
+    <br><br>
+    <label style="font-size: 1.9vw; font-weight:bold;">Item&nbsp;Status:</label><br>
+    <input style="height:1.95vw; width: 19.53vw;" name="status" >
+    <br><br>
+    </div>
+        <br><br>
+    <button class="button1" type="submit" style="text-align: center;">ADD ITEM</button>
+  </form> </center>
+  
+  </body>
+</html>

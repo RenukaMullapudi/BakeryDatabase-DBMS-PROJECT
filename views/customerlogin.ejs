@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+	#heading{background-image: linear-gradient(to bottom right, white, white); opacity:0.6; text-align:center;color: lightpink;font-size:5.4vw;font-family: cursive;}
+	* {box-sizing: border-box;}
+	.column {float: left;width: 33.33%;padding: 0.651vw;}
+	.row::after {content: "";clear: both;display: table;}
+	.button1 {background-color: mistyrose; border: none;color: black;padding: 0.9vw 2.018vw;text-align: center;text-decoration: none;display: inline-block;font-size: 1.5vw; border-radius:10px;}
+	p{text-align: center;color: purple;font-size: 1.302vw;}
+	button:active{
+		color: yellow;
+	}
+	body{background-image:url('custlogin.jpg');}
+</style>
+</head>
+
+<body style="background-image: ">
+<h1 id="heading">WELCOME!</h1>
+<div class="row">
+  <div class="column" ></div>
+  <div class="column" style="background-color: mistyrose; text-align: center; border-radius:25px;">
+  	<h4 style="color: black;"><b>LOGIN TO PLACE OR TRACK YOUR ORDER</b></h4>
+	<p><%=(typeof alertMsg!='undefined')? alertMsg:''%></p>
+    <form action="login" method="post">
+		<label for="username" style="font-size: 1.95vw; ">Username:</label><br>
+		<input style="height:1.95vw; width: 19.53vw; " type="text" name="username" id='username'>
+		<br><br>
+		<label for="password" style="font-size: 1.95vw;">Password:</label><br>
+		<input style="height:1.95vw; width: 19.53vw;"type="password" name="password" id='password'>
+		<br><br>
+		
+  </div>
+  <div>
+  </div>
+  <div class="column">  
+	
+
+</div>
+</div>
+<br><br><br>
+
+<button class="button1" type="submit" style="text-align: center; margin-left:620px;">Login</button>
+</form>
+</body>
+</html>
